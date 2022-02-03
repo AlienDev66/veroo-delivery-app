@@ -1,0 +1,6 @@
+module Pods_reactnativetemplatespaceship {
+  umbrella header "Pods-reactnativetemplatespaceship-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "veroo-delivery-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "template",
+    "expo"
+  ],
+  "homepage": "https://github.com/lucasaugustscode/react-native-template-spaceship#readme",
+  "author": "Lucas Augusto <lucasaugustscode@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "babel-plugin-inline-dotenv": "^1.6.0",
+    "expo": "~44.0.2",
+    "expo-splash-screen": "~0.14.1",
+    "expo-status-bar": "~1.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-iphone-x-helper": "^1.3.1",
+    "react-native-responsive-fontsize": "^0.5.1",
+    "react-native-svg": "12.1.1",
+    "react-native-web": "0.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "@types/react": "~17.0.21",
+    "@types/react-native": "~0.64.12",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.28.0",
+    "prettier": "^2.5.1",
+    "react-native-svg-transformer": "^1.0.0",
+    "typescript": "~4.3.5"
+  },
+  "private": true
+}

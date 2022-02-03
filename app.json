@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "veroo-delivery-app",
+    "slug": "veroo-delivery-app",
+    "version": "0.0.1",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "orientation": "portrait"
+  },
+  "name": "react-native-template-spaceship"
+}
