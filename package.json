@@ -2,12 +2,6 @@
   "name": "veroo-delivery-app",
   "version": "1.0.0",
   "main": "index.js",
-  "keywords": [
-    "react-native",
-    "template",
-    "expo"
-  ],
-  "homepage": "https://github.com/lucasaugustscode/react-native-template-spaceship#readme",
   "author": "Lucas Augusto <lucasaugustscode@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -48,5 +42,5 @@
     "react-native-svg-transformer": "^1.0.0",
     "typescript": "~4.3.5"
   },
-  "private": true
+  "private": false
 }
