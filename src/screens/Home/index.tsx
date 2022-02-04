@@ -1,6 +1,8 @@
 import React from 'react'
 import { View } from 'react-native'
 
+import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs'
+
 import { FlatGrid } from 'react-native-super-grid'
 
 import { styles } from './styles'
@@ -10,6 +12,8 @@ import { FilterSelector } from '@components/FilterSelector'
 import { DrinkCard } from '@components/DrinkCard'
 
 export const Home: React.FC = () => {
+  const TAB_HEIGHT = useBottomTabBarHeight() + 100
+
   return (
     <View style={styles.container}>
       <Header />
@@ -22,7 +26,7 @@ export const Home: React.FC = () => {
           contentContainerStyle={{
             flexGrow: 1,
             paddingTop: 12,
-            paddingBottom: 200 // temporary
+            paddingBottom: TAB_HEIGHT
           }}
           data={[1, 2, 3, 4, 5, 6, 7, 8]}
           keyExtractor={item => String(item)}
