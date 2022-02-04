@@ -12,7 +12,7 @@ import {
 } from '@expo-google-fonts/readex-pro'
 import AppLoading from 'expo-app-loading'
 
-import { Home } from '@screens/Home'
+import { Routes } from '@routes/.'
 
 const App: React.FC = () => {
   const [fontsLoaded] = useFonts({
@@ -30,7 +30,7 @@ const App: React.FC = () => {
   return (
     <>
       <StatusBar style="dark" translucent backgroundColor="transparent" />
-      <Home />
+      <Routes />
     </>
   )
 }
