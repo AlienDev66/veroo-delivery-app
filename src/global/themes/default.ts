@@ -6,7 +6,8 @@ export const theme = {
     title: '#323232',
     text: '#8E8E93',
 
-    highlighter: '#B88AF8',
+    line: '#EBEBEB',
+    liked: '#EB455A',
 
     shape: '#C7C7CC',
 
