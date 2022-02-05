@@ -30,6 +30,7 @@
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
     "react-hooks/exhaustive-deps": "off",
     "react-native/no-unused-styles": "off",
     "react-native/split-platform-components": 2,
