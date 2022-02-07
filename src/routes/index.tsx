@@ -11,11 +11,8 @@ import { RFValue } from 'react-native-responsive-fontsize'
 import { Home } from '@screens/Home'
 
 import HomeIcon from '@assets/home.svg'
-import HomeFocusedIcon from '@assets/homeFocused.svg'
 import SearchIcon from '@assets/search.svg'
-import SearchFocusedIcon from '@assets/searchFocused.svg'
 import BagIcon from '@assets/bag.svg'
-import BagFocusedIcon from '@assets/bagFocused.svg'
 
 const { Navigator, Screen } = createBottomTabNavigator()
 
@@ -35,21 +32,19 @@ export const Routes: React.FC = () => {
             maxWidth: 50,
             maxHeight: 50,
             marginHorizontal: 56
-          }
+          },
+          tabBarActiveTintColor: theme.COLORS.title,
+          tabBarInactiveTintColor: theme.COLORS.shape
         }}
       >
         <Screen
           name="Home-1"
           component={Home}
           options={{
-            tabBarIcon: ({ focused }) => (
+            tabBarIcon: ({ focused, color }) => (
               <View style={styles.container}>
                 {focused && <View style={styles.highlighter} />}
-                {focused ? (
-                  <HomeFocusedIcon width={28} height={28} />
-                ) : (
-                  <HomeIcon width={28} height={28} />
-                )}
+                <HomeIcon width={28} height={28} fill={color} />
               </View>
             )
           }}
@@ -58,14 +53,17 @@ export const Routes: React.FC = () => {
           name="Home-2"
           component={Home}
           options={{
-            tabBarIcon: ({ focused }) => (
+            tabBarIcon: ({ focused, color }) => (
               <View style={styles.container}>
                 {focused && <View style={styles.highlighter} />}
-                {focused ? (
-                  <SearchFocusedIcon width={28} height={28} />
-                ) : (
-                  <SearchIcon width={28} height={28} />
-                )}
+                <SearchIcon
+                  width={28}
+                  height={28}
+                  stroke={color}
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </View>
             )
           }}
@@ -74,14 +72,17 @@ export const Routes: React.FC = () => {
           name="Home-3"
           component={Home}
           options={{
-            tabBarIcon: ({ focused }) => (
+            tabBarIcon: ({ focused, color }) => (
               <View style={styles.container}>
                 {focused && <View style={styles.highlighter} />}
-                {focused ? (
-                  <BagFocusedIcon width={28} height={28} />
-                ) : (
-                  <BagIcon width={28} height={28} />
-                )}
+                <BagIcon
+                  width={28}
+                  height={28}
+                  stroke={color}
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </View>
             )
           }}
