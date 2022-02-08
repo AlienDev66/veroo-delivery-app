@@ -11,6 +11,13 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.COLORS.background
   },
   content: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+
     paddingHorizontal: 7
+  },
+  loading: {
+    marginBottom: 120
   }
 })
