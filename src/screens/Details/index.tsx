@@ -1,19 +1,39 @@
 import React, { useState } from 'react'
 import { View, Text } from 'react-native'
 
+import { useNavigation, useRoute } from '@react-navigation/native'
+
 import { RectButton } from 'react-native-gesture-handler'
+import { SvgFromUri } from 'react-native-svg'
 import { Feather } from '@expo/vector-icons'
 import TouchableScale from 'react-native-touchable-scale'
+import { SharedElement } from 'react-navigation-shared-element'
+
+import { MotiView } from 'moti'
 
 import { styles } from './styles'
 
-import Test from '@assets/test.svg'
 import LikeIcon from '@assets/like.svg'
 
 import { Button } from '@components/Button'
 import { Counter } from '@components/Counter'
 
+interface Params {
+  item: {
+    id: string
+    photo: string
+    name: string
+    description: string
+    price: number
+  }
+}
+
 export const Details: React.FC = () => {
+  const navigation = useNavigation()
+  const route = useRoute()
+
+  const { item } = route.params as Params
+
   const [liked, setLiked] = useState(false)
 
   function handleCappuccinoLike() {
@@ -23,27 +43,48 @@ export const Details: React.FC = () => {
   return (
     <View style={styles.container}>
       <View style={styles.thumbnail}>
-        <RectButton style={styles.turnBack}>
+        <RectButton style={styles.turnBack} onPress={() => navigation.goBack()}>
           <Feather name="chevron-left" style={styles.icon} />
         </RectButton>
 
-        <Test width={400} height={400} />
+        <SharedElement id={`item.${item.id}.photo`}>
+          <SvgFromUri uri={item.photo} style={{ transform: [{ scale: 2 }] }} />
+        </SharedElement>
         <Counter />
       </View>
 
       <View style={styles.content}>
-        <View style={styles.header}>
-          <Text style={styles.title}>Peppermint Mocha</Text>
-          <Text style={styles.price}>$ 18.98</Text>
-        </View>
-
-        <View style={styles.about}>
-          <Text style={styles.description}>
-            A holiday classic, our Peppermint Mocha infuses hand-pulled espresso
-            with rich chocolate sauce, sweet peppermint, topped with a cloud of
-            whipped cream.
+        <MotiView
+          from={{ opacity: 0, translateY: 20 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ type: 'timing' }}
+          delay={2 * 100}
+          style={styles.header}
+        >
+          <Text style={styles.title}>{item.name}</Text>
+          <Text style={styles.price}>
+            {item.price.toLocaleString('en-US', {
+              style: 'currency',
+              currency: 'USD'
+            })}
           </Text>
-        </View>
+        </MotiView>
+
+        <MotiView
+          from={{ opacity: 0, translateY: 20 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ type: 'timing' }}
+          delay={3 * 100}
+          style={styles.about}
+        >
+          <Text
+            style={styles.description}
+            numberOfLines={5}
+            ellipsizeMode="tail"
+          >
+            {item.description}
+          </Text>
+        </MotiView>
 
         <View style={styles.footer}>
           <TouchableScale
