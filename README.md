@@ -7,6 +7,8 @@
 />
 </p>
 
+<h1 align="center">Veroo</h1>
+
 <p
   align="center"
 >
