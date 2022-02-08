@@ -1,11 +1,13 @@
 <p
   align="center"
 >
-  <!-- <img
-    src="./.github/logo.svg"
-    width="140"
-  /> -->
+<img
+  src="./.github/logo.svg"
+  width="140"
+/>
 </p>
+
+<br/>
 
 <p
   align="center"
