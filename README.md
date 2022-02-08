@@ -33,12 +33,11 @@ Veroo is a cappuccino delivery app. This application is for the purpose of study
 <img src="./.github/image-01.svg" />
 
 
-<h2 align="center">Technologies</h2>
-<p align="center">
+## 🚀 Technologies
 The following technologies were used for the development of the application.
-</p>
 
-<p align="center">
+
+<p>
 <a href="https://www.typescriptlang.org/">
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
 </a>
@@ -49,5 +48,3 @@ The following technologies were used for the development of the application.
 <img src="https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white"/>
 </a>
 </p>
-
-Here is a video of the application running:
