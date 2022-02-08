@@ -48,16 +48,6 @@ export const Routes: React.FC = () => {
                 id: `item.${item.id}.photo`,
                 animation: 'move',
                 resize: 'auto'
-              },
-              {
-                id: `item.${item.name}.name`,
-                animation: 'move',
-                resize: 'auto'
-              },
-              {
-                id: `item.${item.price}.price`,
-                animation: 'move',
-                resize: 'auto'
               }
             ]
           }}
