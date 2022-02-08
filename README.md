@@ -16,7 +16,7 @@
   <a href="https://www.figma.com/file/AEwotnhC5KQucbBJi8pAWD/Veroo-Delivery-App-UI?node-id=0%3A1">
     <img src="https://img.shields.io/badge/UI-FIGMA-%2354B2CF" />
   </a>
-  <a href="https://www.figma.com/file/AEwotnhC5KQucbBJi8pAWD/Veroo-Delivery-App-UI?node-id=0%3A1">
+  <a href="https://github.com/lucasaugustscode/veroo-delivery-app/blob/main/.github/INSTRUCTIONS.md">
     <img src="https://img.shields.io/badge/RUN-INSTRUCTIONS-%2354B2CF" />
   </a>
 </p>
@@ -25,16 +25,18 @@
 Veroo is a cappuccino delivery app. This application is for the purpose of studying modern interface and animations.
 </p>
 
-<h2 align="center">Pleasant, fluid and lively experience.</h2>
+<br/>
+
+<h2 align="center">Pleasant, fluid and lively experience</h2>
+<p align="center">Have a captivating experience that sparks emotion when using.</p>
 
 <img src="./.github/image-01.svg" />
 
-<h2 align="center">Technologies</h2>
 
+<h2 align="center">Technologies</h2>
 <p align="center">
 The following technologies were used for the development of the application.
 </p>
-
 
 <p align="center">
 <a href="https://www.typescriptlang.org/">
@@ -48,4 +50,4 @@ The following technologies were used for the development of the application.
 </a>
 </p>
 
-<br/>
+Here is a video of the application running:
