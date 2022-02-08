@@ -1,0 +1,32 @@
+{
+  "drinks": [
+    {
+      "id": "1",
+      "photo": "https://cdn.discordapp.com/attachments/788845721797394485/940453202539728926/caffe-americano_1.svg",
+      "name": "Peppermint Mocha",
+      "description": "Made with 100% ethically sourced espresso, freshly ground for every cup, topped with fresh milk, steamed and frothed, sweetened with a chocolate peppermint syrup, and finished with real whipped cream topped and crushed candy cane. ... Made with no artificial colours or flavours.",
+      "price": 6.99
+    },
+    {
+      "id": "2",
+      "photo": "https://cdn.discordapp.com/attachments/788845721797394485/940453202812371064/caffe-americano_2.svg",
+      "name": "Caramel Macchiato",
+      "description": "The Caramel Macchiato is essentially a not-too-sweet vanilla latte topped with caramel. The “macchiato” distinction is due to the fact the espresso is layered on top of the milk, as opposed to the Starbucks latte, which does the opposite. This layering is especially noticeable in transparent vessels.",
+      "price": 5.99
+    },
+    {
+      "id": "3",
+      "photo": "https://cdn.discordapp.com/attachments/788845721797394485/940453203030450196/caffe-americano_3.svg",
+      "name": "Espresso Ristretto",
+      "description": "Espresso is a concentrated form of coffee served in small, strong shots and is the base for many coffee drinks. It's made from the same beans as coffee but is stronger, thicker, and higher in caffeine. However, because espresso is typically served in smaller servings than coffee, it has less caffeine per serving.",
+      "price": 3.99
+    },
+    {
+      "id": "4",
+      "photo": "https://cdn.discordapp.com/attachments/788845721797394485/940453203282104330/caffe-americano_4.svg",
+      "name": "Original American",
+      "description": "Original American is a type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from, traditionally brewed coffee.",
+      "price": 4.99
+    }
+  ]
+}
